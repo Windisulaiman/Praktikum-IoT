@@ -1,8 +1,8 @@
-## Pertemuan 1   
+# Pertemuan 1   
 ___  
 ### Identitas  
 Nama: Windi Sulaiman Ismansa   
-NIM: H1H024005
+NIM: H1H024005   
 Shift : A   
 ___
 ### Penjelasan Code   
