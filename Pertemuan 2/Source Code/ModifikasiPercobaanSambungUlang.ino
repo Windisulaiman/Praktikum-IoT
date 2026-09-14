@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 
 // Konfigurasi WiFi
-const char* ssid = "S24";
-const char* password = "11111111";
+const char* ssid = "poco";
+const char* password = "9876543210";
 
 // LED indikator
 #define LED_PIN 2  // GPIO 2 = D4 pada NodeMCU ESP8266
