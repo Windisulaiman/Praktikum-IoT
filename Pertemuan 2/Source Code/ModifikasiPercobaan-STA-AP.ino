@@ -3,7 +3,7 @@
 // ===============================
 // KONFIGURASI WIFI RUMAH (STA)
 // ===============================
-const char* ssidSTA = "Authentic Nasgor Tuna Asap";       // Nama WiFi rumah yang akan dihubungkan
+const char* ssidSTA = "poco";       // Nama WiFi rumah yang akan dihubungkan
 const char* passwordSTA = "12345678";     // Password WiFi rumah
 
 // ===============================
