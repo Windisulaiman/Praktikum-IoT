@@ -3,8 +3,8 @@
 // ===============================
 // Konfigurasi WiFi
 // ===============================
-const char* ssid = "S24";
-const char* password = "11111111";
+const char* ssid = "poco";
+const char* password = "9876543210";
 
 // LED indikator
 // GPIO 2 pada ESP8266 = D4 pada NodeMCU

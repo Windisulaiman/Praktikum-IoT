@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 
-const char* ap_ssid = "ESPTunaAsap";
+const char* ap_ssid = "ESP32_AccessPoint";
 const char* ap_password = "12345678"; 
 
 void setup() {
