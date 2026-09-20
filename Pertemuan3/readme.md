@@ -28,7 +28,6 @@ Shift: A
 |---|---|
 | `ESP8266WiFi.h` | Menghubungkan ESP8266 ke jaringan WiFi. |
 | `ESP8266HTTPClient.h` | Membuat komunikasi HTTP pada ESP8266. |
-| `HTTPClient.h` | Menangani proses request HTTP. |
 | `PubSubClient.h` | Menangani komunikasi MQTT. |
 | `ArduinoJson.h` | Membuat dan mengubah data menjadi format JSON. |
 
@@ -183,12 +182,20 @@ Pada percobaan 3B ini, ESP8266 terlebih dahulu dihubungkan ke jaringan WiFi, kem
 ---
 
 ## Skematik Rangkaian
+[Rangkaian Percobaan]("https://github.com/user-attachments/assets/0a176e11-9808-4409-843a-8adf1ac4da14" />)
 
 ---
 
 ## Dokumentasi
 
 ### Percobaan 3A – HTTP POST
+[Hasil Percobaan pada serial monitor]("https://github.com/user-attachments/assets/49999583-969a-40c3-bbcf-19394908d522" /)   
+
 
 
 ### Percobaan 3B – MQTT
+("https://github.com/user-attachments/assets/0f4250d9-28da-4568-b660-4fbba4dcefc3" /)   
+
+("https://github.com/user-attachments/assets/9bef625a-4f14-43a9-874d-dddb9e2d5507" /)   
+("https://github.com/user-attachments/assets/67693c99-3edc-4dd2-b84c-60e1cb9cd142" />)
+
