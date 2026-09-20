@@ -33,9 +33,8 @@ Shift: A
 
 ---
 
-## Board yang Digunakan
-
-NodeMCU 1.0 (ESP8266 – ESP-12E Module)
+## Board yang Digunakan   
+* NodeMCU 1.0 (ESP8266 – ESP-12E Module)
 ---
 
 ## Percobaan 3A – HTTP POST
