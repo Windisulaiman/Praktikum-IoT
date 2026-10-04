@@ -1,5 +1,4 @@
-<img width="1600" height="794" alt="image" src="https://github.com/user-attachments/assets/824150e1-ac22-445c-be82-7bb76fb5f1b0" /># Modul 4: Komunikasi dan Pertukaran Data
-
+# Modul 4 Komunikasi dan Pertukaran Data
 ---
 
 ### Identitas
@@ -138,8 +137,6 @@ Topic  : unsoed/tk245004/AB3/perintah
 ```
 
 ---
-### Jawaban Pertanyaan Praktikum 4A
-
 ### Modifikasi – Kendali Kecerahan LED via PWM percobaan 4A
 
 Modifikasi program agar data JSON yang diterima memuat nilai `intensitas` untuk mengatur kecerahan LED menggunakan `analogWrite()` (PWM).
@@ -447,6 +444,7 @@ Pada percobaan ini, ESP8266 dikonfigurasi sebagai subscriber MQTT yang menerima 
 
 ### Percobaan 4B – Pertukaran Data Dua Arah
 ---
+Percobaan ini mengintegrasikan publish data sensor DHT11 dan subscribe perintah kendali LED dalam satu sistem yang berjalan bersamaan full duplex. Mekanisme non-blocking menggunakan millis() memastikan data suhu dikirim ke topic data setiap 5 detik tanpa menghentikan pemrosesan pesan subscribe. Dari percobaan data suhu berhasil dikirim secara konsisten di setiap
 
 ## Dokumentasi
 (Perintah OFF)["https://github.com/user-attachments/assets/18c18466-5289-48fe-a3fd-cac44b8bd8a3"]   
