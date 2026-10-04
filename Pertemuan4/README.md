@@ -1,4 +1,4 @@
-# Modul 4: Komunikasi dan Pertukaran Data
+<img width="1600" height="794" alt="image" src="https://github.com/user-attachments/assets/824150e1-ac22-445c-be82-7bb76fb5f1b0" /># Modul 4: Komunikasi dan Pertukaran Data
 
 ---
 
@@ -28,7 +28,7 @@ Shift: A
 |---|---|
 | `ESP8266WiFi.h` | Menghubungkan ESP8266 ke jaringan WiFi. |
 | `PubSubClient.h` | Menangani komunikasi MQTT (publish, subscribe, dan koneksi ke broker). |
-| `ArduinoJson.h` | Melakukan serialisasi (objek → JSON string) dan deserialisasi (JSON string → objek) data format JSON. |
+| `ArduinoJson.h` | Melakukan serialisasi (objek ke JSON string) dan deserialisasi (JSON string ke objek) data format JSON. |
 | `DHT.h` | Membaca data suhu dan kelembaban dari sensor DHT11. |
 
 ---
@@ -50,7 +50,7 @@ NodeMCU 1.0 (ESP8266 – ESP-12E Module)
 | `PubSubClient client(espClient)` | Membuat objek client MQTT yang menggunakan koneksi TCP/IP WiFi sebagai transport layer. |
 | `client.setServer(server, port)` | Mendaftarkan alamat broker MQTT dan nomor port yang akan dihubungi. |
 | `client.setCallback(callback)` | Mendaftarkan fungsi callback yang akan dipanggil otomatis setiap kali ada pesan masuk dari topic yang di-subscribe. |
-| `void callback(topic, payload, length)` | Fungsi yang menangani setiap pesan MQTT yang masuk — mengonversi payload, mem-parsing JSON, dan mengendalikan LED. |
+| `void callback(topic, payload, length)` | Fungsi yang menangani setiap pesan MQTT yang masuk mengonversi payload, mem-parsing JSON, dan mengendalikan LED. |
 | `client.connect(clientId)` | Mengirimkan permintaan koneksi ke broker MQTT menggunakan Client ID unik. |
 | `client.subscribe(topic)` | Mendaftarkan ESP8266 untuk menerima setiap pesan yang dipublikasikan ke topic tertentu. |
 | `client.connected()` | Mengecek apakah koneksi ke broker MQTT masih aktif. |
@@ -138,7 +138,6 @@ Topic  : unsoed/tk245004/AB3/perintah
 ```
 
 ---
-
 ### Jawaban Pertanyaan Praktikum 4A
 
 ### Modifikasi – Kendali Kecerahan LED via PWM percobaan 4A
@@ -270,9 +269,6 @@ Topic Perintah: unsoed/tk245004/AB3/perintah   (subscribe perintah ke ESP8266)
 ```
 
 ---
-
-### Jawaban Pertanyaan Praktikum 4B
-
 ### Modifikasi – Dua Aktuator dengan Topic Berbeda Percobaan 4B
 
 Modifikasi program dengan menambahkan topic baru untuk mengendalikan aktuator kedua (buzzer), di mana fungsi callback membedakan pesan berdasarkan topic asal.   
@@ -437,10 +433,11 @@ void loop() {
 
 ## Skematik Rangkaian
 
-### Percobaan 4A – Subscribe & Kendali LED
+### Percobaan 4A
+(Percobaan 4B)["https://github.com/user-attachments/assets/69076fd6-efdf-4d0c-b610-cad88f0baf3a"]
 
-```
-
+### Percobaan 4B
+(Skematik percobaan 4B)["https://github.com/user-attachments/assets/b6a8ff10-3785-4ed8-9a5b-ba4c36f2ccc3"]
 
 ## Detail Percobaan
 
@@ -449,15 +446,14 @@ void loop() {
 Pada percobaan ini, ESP8266 dikonfigurasi sebagai subscriber MQTT yang menerima perintah kendali LED melalui topic `unsoed/tk245004/AB3/perintah`. Setelah ESP8266 berhasil terhubung ke broker HiveMQ dan melakukan subscribe, perintah dikirim secara manual dari aplikasi MQTT Explorer. Pesan JSON `{"perintah":"ON"}` berhasil diterima, di-parsing, dan LED menyala sesuai perintah. Begitu pula pesan `{"perintah":"OFF"}` yang berhasil mematikan LED. Hasil percobaan menunjukkan seluruh  pengujian berjalan sesuai spesifikasi dan Serial Monitor menampilkan pesan yang diterima beserta hasil parsing, dan LED merespons secara real-time setiap kali perintah baru masuk.
 
 ### Percobaan 4B – Pertukaran Data Dua Arah
-
-Percobaan ini mengintegrasikan publish data sensor DHT11 dan subscribe perintah kendali LED dalam satu sistem yang berjalan bersamaan *full duplex*. Mekanisme non-blocking menggunakan `millis()` memastikan data suhu dikirim ke topic data setiap 5 detik tanpa menghentikan pemrosesan pesan subscribe. Dari percobaan data suhu berhasil dikirim secara konsisten di setiap interval 5 detik.
 ---
 
 ## Dokumentasi
+(Perintah OFF)["https://github.com/user-attachments/assets/18c18466-5289-48fe-a3fd-cac44b8bd8a3"]   
+["https://github.com/user-attachments/assets/19650cf3-e481-4c68-a1d3-7401b4fa3d25"]
 
-### Percobaan 4A – Subscribe & Kendali LED
+(Perintah ON)["https://github.com/user-attachments/assets/e0d09295-b20b-42c8-ae8b-c55131cc7af5"]   
+(Hasil percobaan)["https://github.com/user-attachments/assets/f0dcd03f-0663-43cf-bd90-50416e04bc8e"]
 
 
-
-### Percobaan 4B – Full Duplex (Publish + Subscribe)
 
