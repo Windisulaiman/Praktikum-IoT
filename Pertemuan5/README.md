@@ -1,12 +1,12 @@
 # Modul 5 – Pengolahan dan Analisis Data IoT
 
-## Identitas
+## Identitas   
+
 Nama: Windi Sulaiman Ismansa
 NIM : H1H024005   
 Mata Kuliah : Praktikum Sistem Internet of Things / TK24505  
 Modul : 5 – Pengolahan dan Visualisasi Data  
 Shift : A
----
 
 ## Tujuan Praktikum
 
@@ -267,16 +267,6 @@ Menggambar garis suhu hasil Moving Average dengan warna hijau dan ketebalan lebi
 plt.scatter(anom.index + 1, anom["suhu_ma"], color="red", s=120, label="Anomali (dari MA)")
 ```
 Menandai titik anomali yang terdeteksi dari data MA (bukan data mentah) dengan titik merah berukuran lebih besar.
-
-### Perbandingan Hasil Deteksi Anomali
-
-| Metode | Jumlah Anomali Terdeteksi | Keterangan |
-|--------|---------------------------|------------|
-| Z-score dari data **mentah** | Lebih banyak | Noise sesaat ikut terdeteksi sebagai anomali (false positive lebih tinggi) |
-| Z-score dari data **Moving Average** | Lebih sedikit | Hanya lonjakan signifikan yang terdeteksi, lebih akurat |
-
-> **Kesimpulan:** Penerapan Moving Average sebelum z-score meningkatkan akurasi deteksi anomali dengan meredam noise acak, sehingga hanya penyimpangan yang benar-benar signifikan yang terdeteksi sebagai anomali.
----
 
 ## Catatan
 
